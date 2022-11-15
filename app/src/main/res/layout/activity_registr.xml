@@ -4,26 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Registr">
 
     <TextView
-        android:id="@+id/log"
+        android:id="@+id/reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="35dp"
-        android:text="@string/logIn"
+        android:layout_marginTop="20dp"
+        android:text="@string/Registretsia"
         android:textColor="#2D6B22"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <EditText
+        android:id="@+id/Name"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/stylebtn"
+        android:hint="Full Name"
+        android:textColor="#2D6B22"
+        android:textColorHint="#2D6B22"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg"></EditText>
+
+    <EditText
         android:id="@+id/Email"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/stylebtn"
         android:hint="Email/Phone Number"
@@ -32,7 +47,7 @@
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/log"></EditText>
+        app:layout_constraintTop_toBottomOf="@+id/Name"></EditText>
 
     <TextView
         android:id="@+id/Forgetpassword"
@@ -43,20 +58,20 @@
         android:text="Forget Password?"
         android:textColor="#2D6B22"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/confirtpassword" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
         android:textColor="#2D6B22"
         android:textColorHint="#2D6B22"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/Remember"
+        app:layout_constraintBottom_toTopOf="@+id/confirtpassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,9 +82,39 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="45dp"
             android:background="@drawable/stylebtn"
             android:hint="Password"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirtpassword"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#2D6B22"
+        android:textColorHint="#2D6B22"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Remember"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#2D6B22">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/stylebtn"
+            android:hint="Confirm Password"
             android:inputType="textPassword"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -80,26 +125,26 @@
         android:id="@+id/Remember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/Login"
-        app:layout_constraintStart_toStartOf="parent"
         android:text="Remember password"
         android:textColor="#2D6B22"
-        app:layout_constraintTop_toBottomOf="@+id/password"></CheckBox>
+        app:layout_constraintBottom_toTopOf="@+id/Register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirtpassword"></CheckBox>
 
     <Button
-        android:id="@+id/Login"
+        android:id="@+id/Register"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#ACC864"
-        android:text="Login"
+        android:text="Register"
         android:textColor="#072A16"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toTopOf="@+id/Registr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/confirtpassword" />
 
 
     <TextView
@@ -107,21 +152,22 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="OR"
         android:textColor="#2D6B22"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/Register"></TextView>
 
 
     <Button
         android:id="@+id/Google"
 
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="#ACC864"
@@ -131,15 +177,16 @@
         app:layout_constraintBottom_toTopOf="@+id/Registr"
         app:layout_constraintEnd_toStartOf="@+id/Facebook"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login" />
+        app:layout_constraintTop_toBottomOf="@+id/Register" />
 
     <Button
         android:id="@+id/Facebook"
 
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_marginStart="20dp"
 
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="#ACC864"
@@ -149,15 +196,15 @@
         app:layout_constraintBottom_toTopOf="@+id/Registr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Google"
-        app:layout_constraintTop_toBottomOf="@+id/Login" />
+        app:layout_constraintTop_toBottomOf="@+id/Register" />
 
     <TextView
         android:id="@+id/Registr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:onClick="Registratsia"
-        android:text="@string/Registr"
+        android:onClick="Login"
+        android:text="@string/Log"
         android:textColor="#2D6B22"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"

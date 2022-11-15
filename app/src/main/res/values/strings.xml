@@ -4,4 +4,6 @@
     <string name="product">Product of <b>Team Name</b></string>
     <string name="Registr">Dont’ have an account? Let’s<b>Register</b></string>
     <string name="logIn"><b>Log In</b></string>
+    <string name="Registretsia"><b>Register</b></string>
+    <string name="Log">Already registered ?Let’s <b>Login</b></string>
 </resources>
