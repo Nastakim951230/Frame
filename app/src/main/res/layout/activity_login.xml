@@ -21,8 +21,9 @@
     <EditText
         android:id="@+id/Email"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:background="#D3E29D"
         android:textColor="#2D6B22"
         app:layout_constraintBottom_toTopOf="@+id/password"
@@ -30,18 +31,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log"></EditText>
 
+    <TextView
+        android:id="@+id/Forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="Forget Password?"
+        android:textColor="#2D6B22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:background="#D3E29D"
+
         android:textColor="#2D6B22"
         app:layout_constraintBottom_toTopOf="@+id/Remember"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email"></EditText>
-
 
     <CheckBox
         android:id="@+id/Remember"
@@ -53,23 +68,27 @@
 
     <Button
         android:id="@+id/Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#ACC864"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:text="Login"
+        android:backgroundTint="#ACC864"
         android:textColor="#072A16"
+        app:cornerRadius="50dp"
         app:layout_constraintBottom_toTopOf="@+id/Registr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
 
     <TextView
 
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:text="OR"
-
         android:textColor="#2D6B22"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,23 +97,34 @@
 
     <Button
         android:id="@+id/Google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#ACC864"
         android:text="GOOGLE"
-        app:layout_constraintBottom_toTopOf="@+id/Registr"
+        android:textColor="#072A16"
+        app:cornerRadius="50dp"
         app:layout_constraintEnd_toStartOf="@+id/Facebook"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/Facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+
+        android:backgroundTint="#ACC864"
         android:text="FACEBOOK"
-        app:layout_constraintBottom_toTopOf="@+id/Registr"
+        android:textColor="#072A16"
+        app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Google"
-        app:layout_constraintTop_toBottomOf="@+id/textView"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/Registr"
