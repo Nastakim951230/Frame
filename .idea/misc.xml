@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/drawable-v24/toggle_checked_unchecked.xml" value="0.1" />
+        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/drawable-v24/toggle_unchecked_checked.xml" value="0.1" />
         <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/drawable/stylebtn.xml" value="0.244" />
-        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/drawable/stylecheckbox.xml" value="0.1" />
+        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/drawable/toggle.xml" value="0.144" />
+        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/drawable/toggle_checked.xml" value="0.144" />
+        <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/layout/activity_registr.xml" value="0.176" />
         <entry key="..\:/Users/nasty/.android/Praktica_41P/Frame/app/src/main/res/layout/activity_start.xml" value="0.23802083333333332" />

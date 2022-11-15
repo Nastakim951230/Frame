@@ -114,8 +114,11 @@
         android:id="@+id/Remember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already registered ?Let’s Login"
+        android:layout_marginStart="15dp"
+        android:text=" Already registered ?Let’s Login"
         android:textColor="#2D6B22"
+        android:button="@drawable/stylecheckbox"
+        android:theme="@style/MyCheckBox"
         app:layout_constraintBottom_toTopOf="@+id/Register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confirtpassword"></CheckBox>
