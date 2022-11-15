@@ -127,6 +127,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#ACC864"
+        android:onClick="Starting"
         android:text="Register"
         android:textColor="#072A16"
         app:cornerRadius="15dp"

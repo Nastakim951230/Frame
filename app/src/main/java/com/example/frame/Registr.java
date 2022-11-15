@@ -17,4 +17,8 @@ public class Registr extends AppCompatActivity {
         Intent intent = new Intent( this, Login.class);
         startActivity(intent);
     }
+    public void Starting(View v) {
+        Intent intent = new Intent( this, Start.class);
+        startActivity(intent);
+    }
 }

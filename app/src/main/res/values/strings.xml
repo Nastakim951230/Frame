@@ -6,4 +6,5 @@
     <string name="logIn"><b>Log In</b></string>
     <string name="Registretsia"><b>Register</b></string>
     <string name="Log">Already registered ?Let’s <b>Login</b></string>
+    <string name="Congrats"><b>Congrats!</b></string>
 </resources>
