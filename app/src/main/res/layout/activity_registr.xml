@@ -49,17 +49,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name"></EditText>
 
-    <TextView
-        android:id="@+id/Forgetpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:text="Forget Password?"
-        android:textColor="#2D6B22"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirtpassword" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         android:layout_width="0dp"
@@ -125,7 +114,7 @@
         android:id="@+id/Remember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remember password"
+        android:text="Already registered ?Let’s Login"
         android:textColor="#2D6B22"
         app:layout_constraintBottom_toTopOf="@+id/Register"
         app:layout_constraintStart_toStartOf="parent"
