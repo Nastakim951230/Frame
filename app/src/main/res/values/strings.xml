@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Frame</string>
+    <string name="app"><b>App Name</b></string>
+    <string name="product">Product of <b>Team Name</b></string>
+    <string name="Registr">Dont’ have an account? Let’s<b>Register</b></string>
+    <string name="logIn"><b>Log In</b></string>
+</resources>
