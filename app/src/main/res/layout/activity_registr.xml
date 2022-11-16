@@ -1,206 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Registr">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/reg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/Registretsia"
-        android:textColor="#2D6B22"
-        android:textSize="40sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Registr">
 
-    <EditText
-        android:id="@+id/Name"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/stylebtn"
-        android:hint="Full Name"
-        android:textColor="#2D6B22"
-        android:textColorHint="#2D6B22"
-        app:layout_constraintBottom_toTopOf="@+id/Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg"></EditText>
 
-    <EditText
-        android:id="@+id/Email"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/stylebtn"
-        android:hint="Email/Phone Number"
-        android:textColor="#2D6B22"
-        android:textColorHint="#2D6B22"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name"></EditText>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
-        android:textColor="#2D6B22"
-        android:textColorHint="#2D6B22"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/confirtpassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="#2D6B22">
-
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/Registretsia"
+            android:textColor="#2D6B22"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/Name"
+            android:layout_width="0dp"
             android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/stylebtn"
-            android:hint="Password"
-            android:inputType="textPassword"
-            tools:ignore="TouchTargetSizeCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirtpassword"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
-        android:textColor="#2D6B22"
-        android:textColorHint="#2D6B22"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/Remember"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="#2D6B22">
-
+            android:hint="Full Name"
+            android:textColor="#2D6B22"
+            android:textColorHint="#2D6B22"
+            app:layout_constraintBottom_toTopOf="@+id/Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reg"></EditText>
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/Email"
+            android:layout_width="0dp"
             android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/stylebtn"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:hint="Email/Phone Number"
+            android:textColor="#2D6B22"
+            android:textColorHint="#2D6B22"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name"></EditText>
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <CheckBox
-        android:id="@+id/Remember"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text=" Already registered ?Let’s Login"
-        android:textColor="#2D6B22"
-        android:button="@drawable/stylecheckbox"
-        android:theme="@style/MyCheckBox"
-        app:layout_constraintBottom_toTopOf="@+id/Register"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirtpassword"></CheckBox>
-
-    <Button
-        android:id="@+id/Register"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="#ACC864"
-        android:onClick="Starting"
-        android:text="Register"
-        android:textColor="#072A16"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/Registr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirtpassword" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#2D6B22"
+            android:textColorHint="#2D6B22"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/confirtpassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Email"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#2D6B22">
 
 
-    <TextView
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/stylebtn"
+                android:hint="Password"
+                android:inputType="textPassword"
+                tools:ignore="TouchTargetSizeCheck" />
 
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="OR"
-        android:textColor="#2D6B22"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Register"></TextView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirtpassword"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#2D6B22"
+            android:textColorHint="#2D6B22"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/Remember"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#2D6B22">
 
 
-    <Button
-        android:id="@+id/Google"
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/stylebtn"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                tools:ignore="TouchTargetSizeCheck" />
 
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="#ACC864"
-        android:text="GOOGLE"
-        android:textColor="#072A16"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/Registr"
-        app:layout_constraintEnd_toStartOf="@+id/Facebook"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Register" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/Facebook"
 
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="20dp"
+        <CheckBox
+            android:id="@+id/Remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:button="@drawable/stylecheckbox"
+            android:text=" Already registered ?Let’s Login"
+            android:textColor="#2D6B22"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintBottom_toTopOf="@+id/Register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirtpassword"></CheckBox>
 
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="#ACC864"
-        android:text="FACEBOOK"
-        android:textColor="#072A16"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/Registr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Google"
-        app:layout_constraintTop_toBottomOf="@+id/Register" />
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#ACC864"
+            android:onClick="Starting"
+            android:text="Register"
+            android:textColor="#072A16"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/Registr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirtpassword" />
 
-    <TextView
-        android:id="@+id/Registr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:onClick="Login"
-        android:text="@string/Log"
-        android:textColor="#2D6B22"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></TextView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="OR"
+            android:textColor="#2D6B22"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Register"></TextView>
+
+
+        <Button
+            android:id="@+id/Google"
+
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#ACC864"
+            android:text="GOOGLE"
+            android:textColor="#072A16"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/Registr"
+            app:layout_constraintEnd_toStartOf="@+id/Facebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Register" />
+
+        <Button
+            android:id="@+id/Facebook"
+
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#ACC864"
+            android:text="FACEBOOK"
+            android:textColor="#072A16"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/Registr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Google"
+            app:layout_constraintTop_toBottomOf="@+id/Register" />
+
+        <TextView
+            android:id="@+id/Registr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="Login"
+            android:text="@string/Log"
+            android:textColor="#2D6B22"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
